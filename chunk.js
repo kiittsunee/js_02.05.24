@@ -1,11 +1,9 @@
-const chunk = (arr, chunkSize) => {
-    const res = [];
-    for (let i = 0; i < arr.length; i += chunkSize) {
-        res = (arr.slice(i, i + chunkSize));
+const chunk = (array, num) => {
+    const result = [];
+    for (let i = 0; i < array.length; i += num) {
+      result.push(array.slice(i, i + num));
     }
-
-    return res;
-};
-
+    return result;
+  };
 module.exports = {chunk};
     
